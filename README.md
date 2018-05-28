@@ -1,10 +1,8 @@
-## angular2-seed
+## Angular 2+ project based on the angular2-seed
 
-A simple starter project demonstrating the basic concepts of Angular 2.
-
+Tutorial project to learn Angular forms
 
 ### Usage
-- Clone or fork this repository
 - Make sure you have [node.js](https://nodejs.org/) installed version 5+
 - Make sure you have NPM installed version 3+
 - `WINDOWS ONLY` run `npm install -g webpack webpack-dev-server typescript` to install global dependencies
