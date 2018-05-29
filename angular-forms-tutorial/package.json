@@ -26,12 +26,12 @@
     "core-js": "^2.4.1",
     "ie-shim": "^0.1.0",
     "ng2-bootstrap": "^1.6.3",
-    "ngx-bootstrap": "^3.0.0",
     "reflect-metadata": "^0.1.9",
     "rxjs": "5.0.1",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
+    "@angular/cli": "^6.0.5",
     "@types/node": "^7.0.12",
     "angular2-router-loader": "^0.3.4",
     "angular2-template-loader": "^0.6.0",

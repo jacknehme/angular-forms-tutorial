@@ -1,0 +1,51 @@
+<h3>Angular 2 Forms</h3>
+<div class="container">
+  <form>
+        <div class="form-group">
+            <rating name="postRating" 
+                    [max]="10"
+                    [stateOn]="'glyphicon-check'"
+                    [stateOff]="'glyphicon-unchecked'"
+                    (onHover)="hover($event)"
+                    (onLeave)="leave($event)"
+                    [(ngModel)]="postRating"></rating>        
+        </div>
+            <h3>{{postRating}}</h3>
+            <hr/>
+      <div class="btn-group">
+          <label class="btn btn-primary"
+                name="taxType" 
+                [(ngModel)]="taxType"
+                btnRadio="W2">W2</label>
+          <label class="btn btn-primary"
+                name="taxType" 
+                [(ngModel)]="taxType"
+                btnRadio="1099">1099</label>
+      </div>
+      <h3>{{taxType}}</h3>
+      <hr/>
+    <div class="form-group">
+      <timepicker name="startTime" [(ngModel)]="startTime"></timepicker>
+    </div>
+    <h3>{{startTime}}</h3>
+    <hr/>
+    <div class="form-group">
+        <button type="button" class="btn"
+                [class.btn-success]="onOffSwitch === 'On'" 
+                [class.btn-danger]="onOffSwitch === 'Off'"
+                name="onOffSwitch" 
+                [(ngModel)]="onOffSwitch"
+                btnCheckbox
+                btnCheckboxTrue="On"
+                btnCheckboxFalse="Off">{{onOffSwitch}}</button>
+     </div>
+     <h3>{{onOffSwitch}}</h3>
+     <hr/>
+    <div class="form-group" style="display: inline-block">
+      <datepicker name="startDate" [showWeeks]="false" [(ngModel)]="startDate"></datepicker>
+    </div>
+    <h3>{{startDate}}</h3>
+  </form>
+
+  <h3>{{startDate}}</h3>
+</div>
